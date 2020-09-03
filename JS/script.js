@@ -45,3 +45,4 @@ ctx.beginPath();
 ctx.moveTo(200, 100);    
 ctx.lineTo(250, 100);
 ctx.stroke();
+ctx.jj();
