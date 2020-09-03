@@ -33,16 +33,37 @@ const ctx = canvas.getContext('2d');
 // path
 
 
-ctx.beginPath();
-ctx.moveTo(50, 50);
-ctx.fillStyle = "coral";
-ctx.lineTo(150, 50);
-ctx.lineTo(100, 200);
-ctx.closePath();
-ctx.fill()
+// ctx.beginPath();
+// ctx.moveTo(50, 50);
+// ctx.fillStyle = "coral";
+// ctx.lineTo(150, 50);
+// ctx.lineTo(100, 200);
+// ctx.closePath();
+// ctx.fill();
 
+// ctx.beginPath();
+// ctx.moveTo(150, 50);
+// ctx.lineTo(200, 200);
+// ctx.moveTo(200, 200);
+// ctx.lineTo(100, 200);
+// ctx.stroke();
+
+
+//circle
+
+const centreX = canvas.width / 2;
+const centreY = canvas.height / 2;
 ctx.beginPath();
-ctx.moveTo(200, 100);    
-ctx.lineTo(250, 100);
+ctx.arc(centreX, centreY, 200, 0, Math.PI * 2);
+
+//move to mouth
+
+ctx.moveTo(centreX + 100, centreY )
+
+//draw the mouth
+
+ctx.arc( centreX, centreY, 100, 0, Math.PI, )
+
+ctx.arc
+
 ctx.stroke();
-ctx.jj();
