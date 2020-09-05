@@ -73,6 +73,34 @@ const ctx = canvas.getContext('2d');
 
 // project
 
+const centreX = canvas.width / 2;
+const centreY = canvas.height / 2;
+
+//start circle
+
+ctx.beginPath();
+ctx.arc(centreX, centreY - 290 , 60, 0, Math.PI * 2);
+ctx.moveTo(centreX , centreY );
+ctx.fillStyle = "green";
+ctx.fill();
+
+//text
+
+ctx.font = "25px Gotham";
+ctx.fillStyle = "white";
+ctx.fillText('Start', 375, 112);
+
+//line_left
+
+ctx.beginPath();
+ctx.moveTo(357, 150);
+ctx.lineTo(310, 200);
+ctx.stroke();
+
+//line_left
 
 
- 
+ctx.beginPath();
+ctx.moveTo(357, 150);
+ctx.lineTo(310, 200);
+ctx.stroke();
