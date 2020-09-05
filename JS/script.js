@@ -3,11 +3,6 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-
-
-
-
-
 // ctx.fillStyle =  "#30d03d";      
 // ctx.fillRect(20, 20, 150, 100);
 // ctx.fillStyle =  "red";
@@ -51,19 +46,61 @@ const ctx = canvas.getContext('2d');
 
 //circle
 
-const centreX = canvas.width / 2;
-const centreY = canvas.height / 2;
-ctx.beginPath();
-ctx.arc(centreX, centreY, 200, 0, Math.PI * 2);
+// const centreX = canvas.width / 2;
+// const centreY = canvas.height / 2;
+// ctx.beginPath();
+// ctx.arc(centreX, centreY, 200, 0, Math.PI * 2);
 
 //move to mouth
 
-ctx.moveTo(centreX + 100, centreY )
+// ctx.moveTo(centreX + 100, centreY )
 
 //draw the mouth
 
-ctx.arc( centreX, centreY, 100, 0, Math.PI, )
+// ctx.arc( centreX, centreY, 100, 0, Math.PI, false );
+// ctx.stroke();
 
-ctx.arc
+//left eye
 
+// ctx.moveTo(centreX - 60, centreY - 80);
+
+// ctx.arc(centreX - 80, centreY - 80 , 20, 0, Math.PI * 2);
+
+// ctx.stroke();
+
+//right eye
+
+
+// project
+
+const centreX = canvas.width / 2;
+const centreY = canvas.height / 2;
+
+//start circle
+
+ctx.beginPath();
+ctx.arc(centreX, centreY - 290 , 60, 0, Math.PI * 2);
+ctx.moveTo(centreX , centreY );
+ctx.fillStyle = "green";
+ctx.fill();
+
+//text
+
+ctx.font = "25px Gotham";
+ctx.fillStyle = "white";
+ctx.fillText('Start', 375, 112);
+
+//line_left
+
+ctx.beginPath();
+ctx.moveTo(357, 150);
+ctx.lineTo(310, 200);
+ctx.stroke();
+
+//line_left
+
+
+ctx.beginPath();
+ctx.moveTo(357, 150);
+ctx.lineTo(310, 200);
 ctx.stroke();
