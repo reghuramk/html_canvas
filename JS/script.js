@@ -89,6 +89,8 @@ ctx.font = "25px Gotham";
 ctx.fillStyle = "white";
 ctx.fillText('Start', 375, 112);
 
+//===========================================================
+
 //line_left
 
 ctx.beginPath();
@@ -111,10 +113,9 @@ ctx.lineTo(310, 218);
 ctx.stroke();
 
 
-//arrowhead_left
+//arrow_head_left
 
 ctx.beginPath();
-ctx.fillStyle =  "red";
 ctx.moveTo(310, 218);
 ctx.lineTo(300, 218);
 ctx.moveTo(300, 218);
@@ -133,7 +134,7 @@ ctx.moveTo(495, 205);
 ctx.lineTo(495, 220);
 ctx.stroke();
 
-//arrowhead_right
+//arrow_head_right
 
 ctx.beginPath();
 ctx.fillStyle =  "red";
@@ -147,29 +148,31 @@ ctx.moveTo(505, 220);
 ctx.lineTo(495, 220);
 ctx.stroke();
 
-//paygroup circle
+//===========================================================
+
+
+//new paygroup circle
 
 ctx.beginPath();
 ctx.fillStyle =  "black";
 ctx.arc(centreX - 90, centreY - 121 , 50, 0, Math.PI * 2);
 ctx.fill();
 
-//paygroup text
+//new paygroup text
 
 ctx.font = "20px arial";
 ctx.fillStyle =  "white";
-ctx.moveTo(310, 228);
 ctx.fillText("New", 290, 270);
 ctx.fillText("Paygroup", 270, 290);
 
-//paycode cirlce
+//new paycode cirlce
 
 ctx.beginPath();
 ctx.fillStyle =  "black";
 ctx.arc(centreX + 95 , centreY - 119 , 50, 0, Math.PI * 2);
 ctx.fill();
 
-//paycode text
+//new paycode text
 
 ctx.font = "20px arial";
 ctx.fillStyle =  "white";
@@ -177,9 +180,187 @@ ctx.moveTo(310, 228);
 ctx.fillText("New", 478, 270);
 ctx.fillText("Paycode", 458, 290);
 
+//===========================================================
 
 
+//paygroup and general info line
+
+ctx.beginPath();
+ctx.moveTo(310, 329);
+ctx.lineTo(310, 345);
+ctx.stroke();
+
+//paygroup and general info line arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 345);
+ctx.lineTo(300, 345);
+ctx.moveTo(300, 345);
+ctx.lineTo(310, 355);
+ctx.moveTo(310, 355);
+ctx.lineTo(320, 345);
+ctx.moveTo(320, 345);
+ctx.lineTo(310, 345);
+ctx.stroke();
+
+//paygroup and general info rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 356, 170, 90);
+ctx.fill();
+
+//paygroup and general info text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.moveTo(310, 228);
+ctx.fillText("Paygroup and", 230, 390);
+ctx.fillText("General Information", 208, 415);
+
+//===========================================================
+
+//basic details line
+
+ctx.beginPath();
+ctx.moveTo(498, 329);
+ctx.lineTo(498, 345);
+ctx.stroke();
+
+//basic details arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 345);
+ctx.lineTo(488, 345);
+ctx.moveTo(488, 345);
+ctx.lineTo(498, 355);
+ctx.moveTo(498, 355);
+ctx.lineTo(508, 345);
+ctx.moveTo(508, 345);
+ctx.lineTo(498, 345);
+ctx.stroke();
 
 
+//basic details rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 356, 170, 90);
+ctx.fill();
+
+//basic details text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.moveTo(310, 228);
+ctx.fillText("Basic Details", 450, 405);
+
+//===========================================================
+
+//dept,fed info line
+
+ctx.beginPath();
+ctx.moveTo(310, 446);
+ctx.lineTo(310, 460);
+ctx.stroke();
+
+//dept,fed info arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 460);
+ctx.lineTo(300, 460);
+ctx.moveTo(300, 460);
+ctx.lineTo(310, 470);
+ctx.moveTo(310, 470);
+ctx.lineTo(320, 460);
+ctx.moveTo(320, 460);
+ctx.lineTo(310, 460);
+ctx.stroke();
+
+//dept,fed info rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 471, 170, 90);
+ctx.fill();
+
+//dept,fed info text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Department, Federal", 208, 500);
+ctx.fillText("Info and Bank", 235, 520);
+ctx.fillText("Deposit", 260, 540);
+
+//===========================================================
+
+//add accumulators line
+
+ctx.beginPath();
+ctx.moveTo(498, 444);
+ctx.lineTo(498, 458);
+ctx.stroke();
+
+//add accumulators arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 458);
+ctx.lineTo(488, 458);
+ctx.moveTo(488, 458);
+ctx.lineTo(498, 468);
+ctx.moveTo(498, 468);
+ctx.lineTo(508, 458);
+ctx.moveTo(508, 458);
+ctx.lineTo(498, 458);
+ctx.stroke();
+
+//add accumulators rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 469, 170, 90);
+ctx.fill();
+
+//add accumulators text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Add Acumulators", 445, 515);
+
+//===========================================================
 
 
+//Payrole Schedule line
+
+ctx.beginPath();
+ctx.moveTo(310, 561);
+ctx.lineTo(310, 577);
+ctx.stroke();
+
+//payrole Schedule arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 345);
+ctx.lineTo(300, 345);
+ctx.moveTo(300, 345);
+ctx.lineTo(310, 355);
+ctx.moveTo(310, 355);
+ctx.lineTo(320, 345);
+ctx.moveTo(320, 345);
+ctx.lineTo(310, 345);
+ctx.stroke();
+
+//Payrole Schedule rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 650, 170, 90);
+ctx.fill();
+
+//Payrole Schedule text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.moveTo(310, 228);
+ctx.fillText("Payrole Schedule", 230, 390);
+ctx.fillText("And Frequency", 208, 415);
