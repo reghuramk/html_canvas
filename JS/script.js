@@ -80,7 +80,6 @@ const centreY = canvas.height / 2;
 
 ctx.beginPath();
 ctx.arc(centreX, centreY - 290 , 60, 0, Math.PI * 2);
-ctx.moveTo(centreX , centreY );
 ctx.fillStyle = "green";
 ctx.fill();
 
@@ -97,10 +96,90 @@ ctx.moveTo(357, 150);
 ctx.lineTo(310, 200);
 ctx.stroke();
 
-//line_left
-
+//line_right
 
 ctx.beginPath();
-ctx.moveTo(357, 150);
-ctx.lineTo(310, 200);
+ctx.moveTo(445, 150);
+ctx.lineTo(495, 205);
 ctx.stroke();
+
+//arrow_line_left
+
+ctx.beginPath();
+ctx.moveTo(310, 200);
+ctx.lineTo(310, 218);
+ctx.stroke();
+
+
+//arrowhead_left
+
+ctx.beginPath();
+ctx.fillStyle =  "red";
+ctx.moveTo(310, 218);
+ctx.lineTo(300, 218);
+ctx.moveTo(300, 218);
+ctx.lineTo(310, 228);
+ctx.moveTo(310, 228);
+ctx.lineTo(320, 218);
+ctx.moveTo(320, 218);
+ctx.lineTo(310, 218);
+ctx.stroke();
+
+
+//arrow_line_right
+
+ctx.beginPath();
+ctx.moveTo(495, 205);
+ctx.lineTo(495, 220);
+ctx.stroke();
+
+//arrowhead_right
+
+ctx.beginPath();
+ctx.fillStyle =  "red";
+ctx.moveTo(495, 220);
+ctx.lineTo(485, 220);
+ctx.moveTo(485, 220);
+ctx.lineTo(495, 230);
+ctx.moveTo(495, 230);
+ctx.lineTo(505, 220);
+ctx.moveTo(505, 220);
+ctx.lineTo(495, 220);
+ctx.stroke();
+
+//paygroup circle
+
+ctx.beginPath();
+ctx.fillStyle =  "black";
+ctx.arc(centreX - 90, centreY - 121 , 50, 0, Math.PI * 2);
+ctx.fill();
+
+//paygroup text
+
+ctx.font = "20px arial";
+ctx.fillStyle =  "white";
+ctx.moveTo(310, 228);
+ctx.fillText("New", 290, 270);
+ctx.fillText("Paygroup", 270, 290);
+
+//paycode cirlce
+
+ctx.beginPath();
+ctx.fillStyle =  "black";
+ctx.arc(centreX + 95 , centreY - 119 , 50, 0, Math.PI * 2);
+ctx.fill();
+
+//paycode text
+
+ctx.font = "20px arial";
+ctx.fillStyle =  "white";
+ctx.moveTo(310, 228);
+ctx.fillText("New", 478, 270);
+ctx.fillText("Paycode", 458, 290);
+
+
+
+
+
+
+
