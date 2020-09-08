@@ -340,21 +340,21 @@ ctx.stroke();
 //payrole Schedule arrow_head
 
 ctx.beginPath();
-ctx.moveTo(310, 345);
-ctx.lineTo(300, 345);
-ctx.moveTo(300, 345);
-ctx.lineTo(310, 355);
-ctx.moveTo(310, 355);
-ctx.lineTo(320, 345);
-ctx.moveTo(320, 345);
-ctx.lineTo(310, 345);
+ctx.moveTo(310, 577);
+ctx.lineTo(300, 577);
+ctx.moveTo(300, 577);
+ctx.lineTo(310, 588);
+ctx.moveTo(310, 588);
+ctx.lineTo(320, 577);
+ctx.moveTo(320, 577);
+ctx.lineTo(310, 577);
 ctx.stroke();
 
 //Payrole Schedule rect
 
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
-ctx.fillRect(200, 650, 170, 90);
+ctx.fillRect(200, 589, 170, 90);
 ctx.fill();
 
 //Payrole Schedule text
@@ -362,5 +362,113 @@ ctx.fill();
 ctx.font = "17px arial";
 ctx.fillStyle =  "black";
 ctx.moveTo(310, 228);
-ctx.fillText("Payrole Schedule", 230, 390);
-ctx.fillText("And Frequency", 208, 415);
+ctx.fillText("Payrole Schedule", 215, 620);
+ctx.fillText("And Frequency", 225, 645);
+
+//=======================================================================
+
+//add formulas line
+
+ctx.beginPath();
+ctx.moveTo(498, 561);
+ctx.lineTo(498, 577);
+ctx.stroke();
+
+//add formulas arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 577);
+ctx.lineTo(488, 577);
+ctx.moveTo(488, 577);
+ctx.lineTo(498, 588);
+ctx.moveTo(498, 588);
+ctx.lineTo(508, 577);
+ctx.moveTo(508, 577);
+ctx.lineTo(498, 577);
+ctx.stroke();
+
+//add formulas rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 589, 170, 90);
+ctx.fill();
+
+//add formulas text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Add Formulas", 445, 640);
+
+//========================================================
+
+//gross calculation line
+
+ctx.beginPath();
+ctx.moveTo(310, 678);
+ctx.lineTo(310, 694);
+ctx.stroke();
+
+//gross calculation arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 694);
+ctx.lineTo(300, 694);
+ctx.moveTo(300, 694);
+ctx.lineTo(310, 704);
+ctx.moveTo(310, 704);
+ctx.lineTo(320, 694);
+ctx.moveTo(320, 694);
+ctx.lineTo(310, 694);
+ctx.stroke();
+
+//gross calculation rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 705, 170, 90);
+ctx.fill();
+
+//gross calculation text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Gross Calculation,", 210, 730);
+ctx.fillText("Accrual Plan and", 215, 750);
+ctx.fillText("GTL", 260, 770);
+
+
+//======================================================
+
+//add memos line
+
+ctx.beginPath();
+ctx.moveTo(498, 561);
+ctx.lineTo(498, 577);
+ctx.stroke();
+
+//add memos arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 577);
+ctx.lineTo(488, 577);
+ctx.moveTo(488, 577);
+ctx.lineTo(498, 588);
+ctx.moveTo(498, 588);
+ctx.lineTo(508, 577);
+ctx.moveTo(508, 577);
+ctx.lineTo(498, 577);
+ctx.stroke();
+
+//add memos rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 589, 170, 90);
+ctx.fill();
+
+//add memos text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Add Formulas", 445, 640);
