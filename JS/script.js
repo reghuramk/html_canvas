@@ -73,8 +73,8 @@ const ctx = canvas.getContext('2d');
 
 // project
 
-const centreX = canvas.width / 2;
-const centreY = canvas.height / 2;
+const centreX = canvas.width  / 2;
+const centreY = canvas.height  / 4;
 
 //start circle
 
@@ -164,6 +164,8 @@ ctx.font = "20px arial";
 ctx.fillStyle =  "white";
 ctx.fillText("New", 290, 270);
 ctx.fillText("Paygroup", 270, 290);
+
+//===========================================================
 
 //new paycode cirlce
 
@@ -443,32 +445,191 @@ ctx.fillText("GTL", 260, 770);
 //add memos line
 
 ctx.beginPath();
-ctx.moveTo(498, 561);
-ctx.lineTo(498, 577);
+ctx.moveTo(498, 679);
+ctx.lineTo(498, 695);
 ctx.stroke();
 
 //add memos arrow_head
 
 ctx.beginPath();
-ctx.moveTo(498, 577);
-ctx.lineTo(488, 577);
-ctx.moveTo(488, 577);
-ctx.lineTo(498, 588);
-ctx.moveTo(498, 588);
-ctx.lineTo(508, 577);
-ctx.moveTo(508, 577);
-ctx.lineTo(498, 577);
+ctx.moveTo(498, 695);
+ctx.lineTo(488, 695);
+ctx.moveTo(488, 695);
+ctx.lineTo(498, 705);
+ctx.moveTo(498, 705);
+ctx.lineTo(508, 695);
+ctx.moveTo(508, 695);
+ctx.lineTo(498, 695);
 ctx.stroke();
 
 //add memos rect
 
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
-ctx.fillRect(420, 589, 170, 90);
+ctx.fillRect(420, 705, 170, 90);
 ctx.fill();
 
 //add memos text
 
 ctx.font = "17px arial";
 ctx.fillStyle =  "black";
-ctx.fillText("Add Formulas", 445, 640);
+ctx.fillText("Add Memos", 445, 750);
+
+//=======================================================
+
+
+//tax configuration line
+
+ctx.beginPath();
+ctx.moveTo(310, 795);
+ctx.lineTo(310, 811 );
+ctx.stroke();
+
+//tax configuration arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 811);
+ctx.lineTo(300, 811);
+ctx.moveTo(300, 811);
+ctx.lineTo(310, 821);
+ctx.moveTo(310, 821);
+ctx.lineTo(320, 811);
+ctx.moveTo(320, 811);
+ctx.lineTo(310, 811);
+ctx.stroke();
+
+//tax configuration rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 822, 170, 90);
+ctx.fill();
+
+//tax configuration text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Tax Configuration", 215, 870);
+
+//================================================
+
+//Add Cafe Plans line
+
+ctx.beginPath();
+ctx.moveTo(498, 795);
+ctx.lineTo(498, 811);
+ctx.stroke();
+
+//Add Cafe Plans arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 811);
+ctx.lineTo(488, 811);
+ctx.moveTo(488, 811);
+ctx.lineTo(498, 821);
+ctx.moveTo(498, 821);
+ctx.lineTo(508, 811);
+ctx.moveTo(508, 811);
+ctx.lineTo(498, 811);
+ctx.stroke();
+
+//Add Cafe Plans rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 822, 170, 90);
+ctx.fill();
+
+//Add Cafe Plans text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Add Cafe Plans", 445, 870);
+
+//==================================================
+
+
+//Miscellanous line
+
+ctx.beginPath();
+ctx.moveTo(310, 910);
+ctx.lineTo(310, 927);
+ctx.stroke();
+
+//Miscellanous arrow_head
+
+ctx.beginPath();
+ctx.moveTo(310, 927);
+ctx.lineTo(300, 927);
+ctx.moveTo(300, 927);
+ctx.lineTo(310, 937);
+ctx.moveTo(310, 937);
+ctx.lineTo(320, 927);
+ctx.moveTo(320, 927);
+ctx.lineTo(310, 927);
+ctx.stroke();
+
+//Miscellanous rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(200, 937, 170, 90);
+ctx.fill();
+
+//Miscellanous text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Miscellanous", 230, 985);
+
+//=================================================
+
+//Add Tax Grid Options line
+
+ctx.beginPath();
+ctx.moveTo(498, 910);
+ctx.lineTo(498, 927);
+ctx.stroke();
+
+//Add Tax Grid Options arrow_head
+
+ctx.beginPath();
+ctx.moveTo(498, 927);
+ctx.lineTo(488, 927);
+ctx.moveTo(488, 927);
+ctx.lineTo(498, 937);
+ctx.moveTo(498, 937);
+ctx.lineTo(508, 927);
+ctx.moveTo(508, 927);
+ctx.lineTo(498, 927);
+ctx.stroke();
+
+//Add Tax Grid Options rect
+
+ctx.beginPath();
+ctx.fillStyle =  "yellow";
+ctx.fillRect(420, 937, 170, 90);
+ctx.fill();
+
+//Add Tax Grid Options text
+
+ctx.font = "17px arial";
+ctx.fillStyle =  "black";
+ctx.fillText("Add Tax Grid Options", 426, 985);
+
+//=====================================================
+
+//create circle
+
+ctx.beginPath();
+ctx.fillStyle =  "black";
+ctx.arc(centreX  , centreY + 750 , 50, 0, Math.PI * 2);
+ctx.fill();
+
+//new paycode text
+
+ctx.font = "20px arial";
+ctx.fillStyle =  "white";
+ctx.moveTo(310, 228);
+ctx.fillText("New", 380, 1140);
+ctx.fillText("Paycode", 363, 1165);
