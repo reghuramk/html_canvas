@@ -210,7 +210,9 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 356, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 356 , 170, 90);
+
 
 //paygroup and general info text
 
@@ -248,7 +250,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 356, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 356 , 170, 90);
 
 //basic details text
 
@@ -284,7 +287,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 471, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 471 , 170, 90);
 
 //dept,fed info text
 
@@ -321,7 +325,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 469, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 469 , 170, 90);
 
 //add accumulators text
 
@@ -357,7 +362,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 589, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 589 , 170, 90);
 
 //Payrole Schedule text
 
@@ -394,7 +400,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 589, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 589 , 170, 90);
 
 //add formulas text
 
@@ -429,7 +436,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 705, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 705 , 170, 90);
 
 //gross calculation text
 
@@ -467,7 +475,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 705, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 705 , 170, 90);
 
 //add memos text
 
@@ -503,7 +512,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 822, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 822 , 170, 90);
 
 //tax configuration text
 
@@ -538,7 +548,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 822, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 822 , 170, 90);
 
 //Add Cafe Plans text
 
@@ -574,7 +585,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(200, 937, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 937 , 170, 90);
 
 //Miscellanous text
 
@@ -609,7 +621,8 @@ ctx.stroke();
 ctx.beginPath();
 ctx.fillStyle =  "yellow";
 ctx.fillRect(420, 937, 170, 90);
-ctx.fill();
+ctx.strokeStyle = "black";
+ctx.strokeRect(420, 937 , 170, 90);
 
 //Add Tax Grid Options text
 
@@ -619,6 +632,69 @@ ctx.fillText("Add Tax Grid Options", 426, 985);
 
 //=====================================================
 
+//miscellanous lower line
+
+ctx.beginPath();
+ctx.moveTo(310, 1027);
+ctx.lineTo(310, 1043);
+ctx.stroke();
+
+//========================================================
+
+//  lower line
+
+ctx.beginPath();
+ctx.moveTo(498, 1027);
+ctx.lineTo(498, 1043);
+ctx.stroke();
+
+//=========================================================
+
+// miscellanous line_left
+
+ctx.beginPath();
+ctx.moveTo(310, 1043);
+ctx.lineTo(350, 1111);
+ctx.stroke();
+
+//add tax grid options line_right
+
+ctx.beginPath();
+ctx.moveTo(498, 1043);
+ctx.lineTo(448, 1110);
+ctx.stroke();
+
+//==========================================================
+
+// miscellanous arrow_head
+
+ctx.beginPath();
+ctx.moveTo(350, 1111);
+ctx.lineTo(341, 1118);
+ctx.moveTo(341, 1118);
+ctx.lineTo(358, 1122);
+ctx.moveTo(358, 1122);
+ctx.lineTo(360, 1106);
+ctx.moveTo(360, 1106);
+ctx.lineTo(350, 1111);
+ctx.stroke();
+
+// add tax grid options arrow_head
+
+ctx.beginPath();
+ctx.moveTo(448, 1110);
+ctx.lineTo(457, 1118);
+ctx.moveTo(457, 1118);
+ctx.lineTo(440, 1122);
+ctx.moveTo(440, 1122);
+ctx.lineTo(437, 1100);
+ctx.moveTo(437, 1100);
+ctx.lineTo(448, 1110);
+ctx.stroke();
+
+
+
+//=======================================================
 //create circle
 
 ctx.beginPath();
@@ -626,10 +702,12 @@ ctx.fillStyle =  "black";
 ctx.arc(centreX  , centreY + 750 , 50, 0, Math.PI * 2);
 ctx.fill();
 
+
+//=============================================================
+
 //new paycode text
 
 ctx.font = "20px arial";
 ctx.fillStyle =  "white";
 ctx.moveTo(310, 228);
-ctx.fillText("New", 380, 1140);
-ctx.fillText("Paycode", 363, 1165);
+ctx.fillText("Create", 370, 1152);
